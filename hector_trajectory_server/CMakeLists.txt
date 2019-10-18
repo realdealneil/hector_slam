@@ -104,6 +104,11 @@ install(TARGETS hector_trajectory_server
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+# Install all the launch files
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+)
+
 ## Mark cpp header files for installation
 # install(DIRECTORY include/${PROJECT_NAME}/
 #   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
